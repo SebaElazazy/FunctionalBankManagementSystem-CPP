@@ -1174,29 +1174,35 @@ void PerformManageUsersOptions(enManageUsersOptions ManageUsersOptions) {
 
         AddNewUsers();
         GoBackToManageUsersMenue();
+        break;
     }
     case enManageUsersOptions::eListUsers: {
         system("cls");
         ShowAllUsersScreen();
         GoBackToManageUsersMenue();
+        break;
     }
     case enManageUsersOptions::eFindUser: {
         system("cls");
         ShowFindUserScreen();
         GoBackToManageUsersMenue();
+        break;
     }
     case enManageUsersOptions::eDeleteUser: {
         system("cls");
         ShowDeleteUserScreen();
         GoBackToManageUsersMenue();
+        break;
     }
     case enManageUsersOptions::eUpdateUser: {
         system("cls");
         ShowUpdateUserScreen();
         GoBackToManageUsersMenue();
+        break;
     }
     case enManageUsersOptions::eMainMenue: {
         ShowMainMenue();
+        break;
     }
 
     }
@@ -1325,4 +1331,5 @@ int main()
     ShowLogInScreen();
     system("pause>0");
     return 0;
+
 }
